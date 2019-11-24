@@ -1,0 +1,15 @@
+.card {
+  padding: 3em;
+  border: none;
+  box-shadow: 0 6px 36px rgba(0, 0, 0, 0.3);
+}
+
+.container {
+  height: 100vh;
+}
+
+.display-4 {
+  font-size: 50px;
+
+  background: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>My BookList App</title>
+    <link rel="shortcut icon" type="image/png" href="favicon.png" />
+
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container-fluid mt-4 ">
+      <div class="display-4 mt-3 text-center">
+        <img src="https://img.icons8.com/doodle/96/000000/book-shelf--v3.png" />
+        My <span class="text-success">Book</span>Shelf
+        <!-- <h3>
+          My BookShelf
+        </h3> -->
+      </div>
+
+      <div class="row">
+        <div class="col-lg-6">
+          <form class="p-5 " action="" id="book-form">
+            <div class="card col-6 mx-auto">
+              <div class="form-group">
+                <label for="title">Title</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name=""
+                  id="title"
+                  placeholder=""
+                />
+              </div>
+              <div class="form-group">
+                <label for="title">Author</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name=""
+                  id="author"
+                  placeholder=""
+                />
+              </div>
+              <div class="form-group">
+                <label for="title">#ISBN</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name=""
+                  id="isbn"
+                  placeholder=""
+                />
+              </div>
+              <input
+                type="submit"
+                value="Add Book"
+                class="mx-auto mt-4 btn btn-info"
+              />
+            </div>
+          </form>
+        </div>
+        <div class="col-lg-6">
+          <table class="table mt-5 table-striped ">
+            <thead>
+              <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>#ISBN</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody id="book-list"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
